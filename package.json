@@ -1,5 +1,5 @@
 {
-  "name": "A2Z Shoppy",
+  "name": "A2ZShoppy",
   "version": "1.0.0",
   "description": "Ecommerce site ",
   "main": "server.js",
@@ -8,7 +8,7 @@
     "start": "nodemon backend/server.js",
     "dev": "set NODE_ENV=development&& nodemon backend/server.js ",
     "prod": "set NODE_ENV=production&& nodemon backend/server.js ",
-    "seeder": "node utils/seeder.jss"
+    "seeder": "node utils/seeder.js"
   },
   "author": "Gokul",
   "license": "ISC",

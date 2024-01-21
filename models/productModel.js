@@ -64,9 +64,10 @@ const productSchema = new mongoose.Schema({
     default: 0,
   },
   reviews: [
-    {user:{
-      type: mongoose.Schema.Types.ObjectId,
-      ref:"user"
+    {
+      user: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "user",
       },
       rating: {
         type: String,
@@ -87,6 +88,6 @@ const productSchema = new mongoose.Schema({
   },
 });
 
-let schema = mongoose.model("Product", productSchema);
+let schema = mongoose.model("products", productSchema);
 
 module.exports = schema;
